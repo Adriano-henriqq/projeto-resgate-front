@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <title>E-mails Enviados</title>
+    <link rel="icon" href="./src/icon_81333dd52bb930bbcd4b77ea328aa462.ico" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./app/style.css">
+</head>
+<body>
+
+    <header >
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="nav-link active" href="index.html">Enviar emails</a>
+          </nav>
+    </header>
+    <div class="container mt-5">
+        <h1> Emails enviados CSPFA 10</h1>
+        <h3>instruções de uso:</h3>
+        <span data-enviados></span>
+        <p>Selecione o email desejado para enviar</p>
+        
+        <form action="/enviar-email" method="post">
+            <div class="form-group">
+                
+                    <table id="dados-tabela" class="table table-dark">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>Selecionar</th>
+                                <th>Dados</th>
+                                <th>Email</th>
+                                <th>ra</th>
+                            </tr>
+                        </thead>
+
+                        <!-- A tabela será preenchida aqui -->
+                    </table>
+                
+            </div>
+            
+            <button id="btnSubmit" type="submit" class="btn btn-outline-primary botao">Enviar</button>
+        </form>
+    </div>
+
+    <script type="module" src="./app/scriptEnviados.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

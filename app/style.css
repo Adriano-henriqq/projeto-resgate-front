@@ -1,0 +1,71 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body{
+  background: rgb(182,237,144);
+  background: linear-gradient(90deg, rgba(182,237,144,1) 0%, rgba(96,237,110,1) 31%, rgba(55,195,68,1) 54%, rgba(16,134,45,1) 73%);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container__background{
+    background: #ededed;
+    background-size: cover;
+    border-radius: 60px !important;
+}
+.img-size{
+    width: 200px;
+    border-radius: 100%;
+    animation: moveUpDown 5s infinite alternate;
+}
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0); /* Ajuste a quantidade de movimento conforme necessário */
+    }
+  }
+.enviado {
+    background-color: #8bc34a; /* Ou qualquer outra cor de sua escolha */
+}
+
+.check__style{
+    padding: .5rem;
+}
+.lista_transition{
+    transition: 1s;
+}
+.botao {
+    position: fixed;
+    bottom: 50px; /* Distância do botão até o final da tela */
+    left: 120px; /* Distância do botão até a borda direita da tela */
+  }
+  
+  .container__nav{
+    margin-left: 12rem;
+  }
+  .carregador-active {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid #555;
+    border-top-color: #f8b26a;
+    animation: loader-circle 1s linear infinite;
+    position: absolute;
+    top: 10px;
+    left : 50px
+  }
+  
+  @keyframes loader-circle {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
