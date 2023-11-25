@@ -109,7 +109,7 @@ function recebeDadosInput() {
                     selecionados = 0
                     contadorSelecionados.innerText = selecionados
                     console.log(dadosEmailSelecionados)
-                    // window.location.reload()
+                    window.location.reload()
                    
                 })
                 
