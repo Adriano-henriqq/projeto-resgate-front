@@ -16,6 +16,8 @@ body{
 }
 .img-size{
     width: 200px;
+    max-width: 100%;
+    height: auto;
     border-radius: 100%;
     animation: moveUpDown 5s infinite alternate;
 }

@@ -11,40 +11,41 @@
 <body>
    
     
-    <div class="container mt-5 p-5 rounded container__background ">
-       <div class="d-flex justify-content-lg-around align-items-md-center"> 
-            <div class="flex-lg-column">
+    <div class="container mt-5 p-5 rounded container__background">
+        <div class="d-flex flex-column flex-lg-row justify-content-lg-around align-items-md-center">
+            <div class="flex-lg-column mb-3 mb-lg-0">
                 <h1>Sistema de Envio de Emails</h1>
-                <h3>instruções de uso:</h3>
+                <h3>Instruções de uso:</h3>
                 <p>Selecione o primeiro checkbox para selecionar a quantidade certa</p>
                 <p>Não selecione as caixas individualmente, pois não será efetuado o envio</p>
             </div>
             <img class="img-fluid img-size" src="./src/logo cs.jpeg" alt="">
-            <a class="badge badge-primary p-3 " href="emailEnviado.html">Emails enviados</a>     
+            <a class="badge badge-primary p-3" href="emailEnviado.html">Emails enviados</a>
         </div>
+    
         <form action="/enviar-email" method="post">
-            <div class="form-group shadow p-5 mb-5 bg-body rounded container--color">
-                
-                    <table id="dados-tabela" class="table table-hover table-dark ">
-                        <thead class="thead-light">
-                            <tr>
-                                <th>Selecionar</th>
-                                <th>Nome</th>
-                                <th>Email</th>
-                                <th>Ra</th>
-                            </tr>
-                        </thead>
-                        <label class="check__style" for="check-mestre">Selecionar limite de emails</label>
-                        <input type="checkbox" name="check" id="check-mestre">
-                        <p data-contador></p>
-
-                        <!-- A tabela será preenchida aqui -->
-                    </table>
+            <div class="form-group shadow p-3 mb-5 bg-body rounded container--color">
+    
+                <label class="check__style" for="check-mestre">Selecionar limite de emails</label>
+                <input type="checkbox" name="check" id="check-mestre">
+                <p data-contador></p>
+    
+                <table id="dados-tabela" class="table table-hover table-dark mt-3">
+                    <thead class="thead-light">
+                    <tr>
+                        <th>Selecionar</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ra</th>
+                    </tr>
+                    </thead>
+                    <!-- A tabela será preenchida aqui -->
+                </table>
             </div>
-            
+    
             <div class="form-group">
                 <button id="btnSubmit" type="submit" class="btn btn-outline-primary botao">Enviar</button>
-              </div>
+            </div>
         </form>
     </div>
 
