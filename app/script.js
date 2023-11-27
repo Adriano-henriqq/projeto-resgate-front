@@ -3,7 +3,7 @@ import { enviaDadosParaBackend, excluirDadosEnviados, salvaDadosTabelaEnviados }
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const dados = await fetch('https://projeto-resgate-api.vercel.app/api/dados').then(resposta => resposta.json())
+        const dados = await fetch('http://localhost:3000/api/dados').then(resposta => resposta.json())
             const tabela = document.getElementById('dados-tabela')
            
             for (let dado in dados) {
