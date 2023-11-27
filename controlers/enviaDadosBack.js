@@ -2,7 +2,7 @@
 import { removeDadosSelecionados } from "../app/script.js";
 async function enviaDadosParaBackend(dados) {
     try {
-         const response = await fetch("http://localhost3000/enviar-email", {
+         const response = await fetch("http://localhost:3000/enviar-email", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ async function enviaDadosParaBackend(dados) {
 //exclui da tabela os 
 function excluirDadosEnviados(dadosEmailSelecionados) {
     // A função fetch aqui não está visível no código fornecido, mas assumindo que está funcionando corretamente
-    fetch('http://localhost3000/excluir-dados-enviados', {
+    fetch('http://localhost:3000/excluir-dados-enviados', {
         method: 'DELETE',
         headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ function excluirDadosEnviados(dadosEmailSelecionados) {
 
 async function salvaDadosTabelaEnviados(dados) {
     try {
-        const resposta = await fetch("http://localhost3000/salva-dados", {
+        const resposta = await fetch("http://localhost:3000/salva-dados", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
