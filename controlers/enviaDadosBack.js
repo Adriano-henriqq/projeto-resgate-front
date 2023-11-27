@@ -2,7 +2,7 @@
 import { removeDadosSelecionados } from "../app/script.js";
 async function enviaDadosParaBackend(dados) {
     try {
-         const response = await fetch("http://localhost:3000/enviar-email", {
+         const response = await fetch("https://projeto-resgate-api.vercel.app/enviar-email", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
